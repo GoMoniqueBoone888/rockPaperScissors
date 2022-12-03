@@ -43,7 +43,7 @@ function playRound(playerSelection, computerSelection) {
 
   if (playerSelection.toUpperCase() == "SCISSORS" && computerSelection.toUpperCase() == "PAPER"){
     playerScore = playerScore + 1;
-    return "Congratulation! You won this round. Play again?";
+    return "Congratulations!! You won this round. Play again?";
   }
 
   if (playerSelection.toUpperCase() == "SCISSORS" && computerSelection.toUpperCase() == "ROCK"){
@@ -77,7 +77,7 @@ function getComputerChoice() {
 function game(){
 
   // want the game to play multiple rounds
-  while (computerScore < 2 && playerScore < 2)
+  while (computerScore < 3 && playerScore < 3)
   {
     //prompt user input
     let playerSelection = window.prompt("Enter if you dare to the Game of pure skills... or is it luck... Select 'Rock, Paper or Scissors' for your weapon");
