@@ -88,8 +88,8 @@ function game(){
       }
 
   //Report the winner(display the final score of the game... display/alert function) Outside the loop
-alert(playerScore());
-alert(computerScore());
+alert(playerScore("Player Final Score"));
+alert(computerScore("Computer Final Score"));
 
 }
 //Main program
