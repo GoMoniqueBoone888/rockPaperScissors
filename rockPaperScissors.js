@@ -77,7 +77,7 @@ function getComputerChoice() {
 function game(){
 
   // want the game to play multiple rounds
-  while (computerScore < 3 && playerScore < 3)
+  while ((computerScore + playerScore) < 3)
   {
     //prompt user input
     let playerSelection = window.prompt("Enter if you dare to the Game of pure skills... or is it luck... Select 'Rock, Paper or Scissors' for your weapon");
@@ -88,8 +88,8 @@ function game(){
       }
 
   //Report the winner(display the final score of the game... display/alert function) Outside the loop
-alert(playerScore("Player Final Score"));
-alert(computerScore("Computer Final Score"));
+alert("Player Final Score:" + playerScore);
+alert("Computer Final Score:" + computerScore);
 
 }
 //Main program
